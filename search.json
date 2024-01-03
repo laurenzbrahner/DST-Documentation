@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Beispieltitel",
     "section": "",
-    "text": "Preface\nThis is a Quarto book template.\n\nServus erdnuss"
+    "text": "Preface\nThis is a Quarto book template.\n\n\n\nServus erdnuss\nmoin servus miun"
   },
   {
     "objectID": "intro.html",
@@ -18,7 +18,7 @@
     "href": "summary.html",
     "title": "2  Summary",
     "section": "",
-    "text": "In summary, this book has no content whatsoever."
+    "text": "In summary, this book has no content whatsoever. okay"
   },
   {
     "objectID": "references.html",
