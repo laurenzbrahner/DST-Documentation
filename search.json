@@ -2,9 +2,16 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Beispieltitel",
+    "title": "Soptify Trends 2023",
     "section": "",
-    "text": "Preface\nThis is a Quarto book template.\n\n\n\nServus erdnuss\nmoin servus miun"
+    "text": "Preface\nThis is a Quarto book template."
+  },
+  {
+    "objectID": "index.html#servus-erdnuss",
+    "href": "index.html#servus-erdnuss",
+    "title": "Soptify Trends 2023",
+    "section": "Servus erdnuss",
+    "text": "Servus erdnuss\nmoin servus miun"
   },
   {
     "objectID": "intro.html",
