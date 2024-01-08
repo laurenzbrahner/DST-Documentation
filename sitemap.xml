@@ -2,18 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://laurenzbrahner.github.io/DST-Documentation/index.html</loc>
-    <lastmod>2024-01-07T21:33:26.002Z</lastmod>
+    <lastmod>2024-01-08T00:47:54.114Z</lastmod>
   </url>
   <url>
     <loc>https://laurenzbrahner.github.io/DST-Documentation/intro.html</loc>
-    <lastmod>2024-01-07T21:33:26.006Z</lastmod>
+    <lastmod>2024-01-08T00:47:54.122Z</lastmod>
+  </url>
+  <url>
+    <loc>https://laurenzbrahner.github.io/DST-Documentation/basicinfo.html</loc>
+    <lastmod>2024-01-08T00:47:54.126Z</lastmod>
+  </url>
+  <url>
+    <loc>https://laurenzbrahner.github.io/DST-Documentation/einfluss_tonart.html</loc>
+    <lastmod>2024-01-08T00:47:54.130Z</lastmod>
+  </url>
+  <url>
+    <loc>https://laurenzbrahner.github.io/DST-Documentation/einfluss_tonart_spezifischer.html</loc>
+    <lastmod>2024-01-08T00:47:54.138Z</lastmod>
+  </url>
+  <url>
+    <loc>https://laurenzbrahner.github.io/DST-Documentation/release_month.html</loc>
+    <lastmod>2024-01-08T00:47:54.142Z</lastmod>
+  </url>
+  <url>
+    <loc>https://laurenzbrahner.github.io/DST-Documentation/speechie.html</loc>
+    <lastmod>2024-01-08T00:47:54.146Z</lastmod>
+  </url>
+  <url>
+    <loc>https://laurenzbrahner.github.io/DST-Documentation/energy.html</loc>
+    <lastmod>2024-01-08T00:47:54.150Z</lastmod>
+  </url>
+  <url>
+    <loc>https://laurenzbrahner.github.io/DST-Documentation/map.html</loc>
+    <lastmod>2024-01-08T00:47:54.178Z</lastmod>
   </url>
   <url>
     <loc>https://laurenzbrahner.github.io/DST-Documentation/summary.html</loc>
-    <lastmod>2024-01-07T21:33:26.010Z</lastmod>
+    <lastmod>2024-01-08T00:47:54.182Z</lastmod>
   </url>
   <url>
     <loc>https://laurenzbrahner.github.io/DST-Documentation/references.html</loc>
-    <lastmod>2024-01-07T21:33:26.014Z</lastmod>
+    <lastmod>2024-01-08T00:47:54.186Z</lastmod>
   </url>
 </urlset>
