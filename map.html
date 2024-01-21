@@ -223,29 +223,36 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <div class="cell" data-execution_count="1">
 <div class="cell-output cell-output-stderr">
-<pre><code>/tmp/ipykernel_2184/1080206803.py:61: FutureWarning: The geopandas.dataset module is deprecated and will be removed in GeoPandas 1.0. You can get the original 'naturalearth_lowres' data from https://www.naturalearthdata.com/downloads/110m-cultural-vectors/.
-  world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))</code></pre>
+<pre><code>/tmp/ipykernel_2379/1080206803.py:61: FutureWarning: The geopandas.dataset module is deprecated and will be removed in GeoPandas 1.0. You can get the original 'naturalearth_lowres' data from https://www.naturalearthdata.com/downloads/110m-cultural-vectors/.
+  world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))
+/tmp/ipykernel_2379/1080206803.py:65: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  world['artist_count'].fillna(0, inplace=True)</code></pre>
 </div>
 <div class="cell-output cell-output-display" data-execution_count="1">
 
 <style>
-  #altair-viz-9340019d3f7d425ba771809f136b620f.vega-embed {
+  #altair-viz-14aaee65f6b1416fbe964fdca134712f.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-9340019d3f7d425ba771809f136b620f.vega-embed details,
-  #altair-viz-9340019d3f7d425ba771809f136b620f.vega-embed details summary {
+  #altair-viz-14aaee65f6b1416fbe964fdca134712f.vega-embed details,
+  #altair-viz-14aaee65f6b1416fbe964fdca134712f.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-9340019d3f7d425ba771809f136b620f"></div>
+<div id="altair-viz-14aaee65f6b1416fbe964fdca134712f"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-9340019d3f7d425ba771809f136b620f") {
-      outputDiv = document.getElementById("altair-viz-9340019d3f7d425ba771809f136b620f");
+    if (outputDiv.id !== "altair-viz-14aaee65f6b1416fbe964fdca134712f") {
+      outputDiv = document.getElementById("altair-viz-14aaee65f6b1416fbe964fdca134712f");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
