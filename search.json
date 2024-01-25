@@ -1,72 +1,182 @@
 [
   {
-    "objectID": "index.html#vorwort",
-    "href": "index.html#vorwort",
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "Soptify Analyse",
-    "section": "Vorwort",
-    "text": "Vorwort\nIm Folgenden wird anahnd eines Datensatzes, welcher die Erfolgreichsten Songs und Infos zu ihnen enthält, die aktuellen trends in der Musikbranche analysiert."
+    "section": "",
+    "text": "Vorwort\nIm Folgenden wird anahnd eines Datensatzes, welcher die Erfolgreichsten Songs und Infos zu ihnen enthält, die aktuellen trends in der Musikbranche analysiert.",
+    "crumbs": [
+      "Vorwort"
+    ]
   },
   {
     "objectID": "intro.html",
     "href": "intro.html",
     "title": "1  Einleitung",
     "section": "",
-    "text": "Die Klangwelle des Erfolgs: Einblicke in die Top Hits von Spotify 2023\n\nEine datengesteuerte Analyse der Musikindustrie\n\nPräsentiert von: Laurenz Brahner\nDatum: xx\n\n\n„Musik erzeugt eine Art Vergnügen, auf das die menschliche Natur nicht verzichten kann.“(Konfuzius)"
+    "text": "Die Klangwelle des Erfolgs: Einblicke in die Top Hits von Spotify 2023\n\nEine datengesteuerte Analyse der Musikindustrie\n\nPräsentiert von: Laurenz Brahner\nDatum: xx\n\n\n„Musik erzeugt eine Art Vergnügen, auf das die menschliche Natur nicht verzichten kann.“(Konfuzius)",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung</span>"
+    ]
+  },
+  {
+    "objectID": "basicinfo.html",
+    "href": "basicinfo.html",
+    "title": "2  Die Erfolgreichsten Künstler 2023",
+    "section": "",
+    "text": "Ein Blick auf die Spitze der Streaming-Charts",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Die Erfolgreichsten Künstler 2023</span>"
+    ]
   },
   {
     "objectID": "basicinfo.html#ein-blick-auf-die-spitze-der-streaming-charts",
     "href": "basicinfo.html#ein-blick-auf-die-spitze-der-streaming-charts",
     "title": "2  Die Erfolgreichsten Künstler 2023",
-    "section": "Ein Blick auf die Spitze der Streaming-Charts",
-    "text": "Ein Blick auf die Spitze der Streaming-Charts\n\n2023 war ein Jahr voller aufregender musikalischer Entdeckungen und Bestätigungen etablierter Stars.\nHier sind die Künstler, die die höchsten Streaming-Zahlen auf Spotify erreicht haben:\n\n\n\n\n\n\n\n\n\n\nWas Hat diese Künstler so Erfolgreich gemacht? gibt es eine Geheimformel für Hits? 🤔\n–&gt; Lass uns das in den nächsten Folien Herausfinden"
+    "section": "",
+    "text": "2023 war ein Jahr voller aufregender musikalischer Entdeckungen und Bestätigungen etablierter Stars.\nHier sind die Künstler, die die höchsten Streaming-Zahlen auf Spotify erreicht haben:\n\n\n\nWas Hat diese Künstler so Erfolgreich gemacht? gibt es eine Geheimformel für Hits? 🤔\n–&gt; Lass uns das in den nächsten Folien Herausfinden",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Die Erfolgreichsten Künstler 2023</span>"
+    ]
+  },
+  {
+    "objectID": "einfluss_tonart.html",
+    "href": "einfluss_tonart.html",
+    "title": "3  Der Einfluss der Tonart auf die Streamingzahlen",
+    "section": "",
+    "text": "Wie Tonarten die Popularität beeinflussen",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Der Einfluss der Tonart auf die Streamingzahlen</span>"
+    ]
   },
   {
     "objectID": "einfluss_tonart.html#wie-tonarten-die-popularität-beeinflussen",
     "href": "einfluss_tonart.html#wie-tonarten-die-popularität-beeinflussen",
     "title": "3  Der Einfluss der Tonart auf die Streamingzahlen",
-    "section": "Wie Tonarten die Popularität beeinflussen",
-    "text": "Wie Tonarten die Popularität beeinflussen\n\nUnsere Analyse zeigt, dass bestimmte Tonarten in den Top-Streaming-Songs von 2023 überrepräsentiert sind.\nDies legt nahe, dass die Tonart einen signifikanten Einfluss auf die Beliebtheit und den Erfolg eines Songs haben kann.\n\n\n\n\n\n\n\n\n\n\nTop Tonarten nach durchschnittlichen Streamingzahlen:\n\nMajor(Dur) - Durchschnittlich 551 Millionen Streams\nMinor(Moll) - Durchschnittlich 491 Millionen Streams\n\n\nInteressanterweise scheint Dur besonders attraktiv für Hörer zu sein, was sich in höheren Streamingzahlen wiederspiegelt."
+    "section": "",
+    "text": "Unsere Analyse zeigt, dass bestimmte Tonarten in den Top-Streaming-Songs von 2023 überrepräsentiert sind.\nDies legt nahe, dass die Tonart einen signifikanten Einfluss auf die Beliebtheit und den Erfolg eines Songs haben kann.\n\n\n\nTop Tonarten nach durchschnittlichen Streamingzahlen:\n\nMajor(Dur) - Durchschnittlich 551 Millionen Streams\nMinor(Moll) - Durchschnittlich 491 Millionen Streams\n\n\nInteressanterweise scheint Dur besonders attraktiv für Hörer zu sein, was sich in höheren Streamingzahlen wiederspiegelt.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Der Einfluss der Tonart auf die Streamingzahlen</span>"
+    ]
+  },
+  {
+    "objectID": "einfluss_tonart_spezifischer.html",
+    "href": "einfluss_tonart_spezifischer.html",
+    "title": "4  Spezifischerer Einblick in die Tonarten",
+    "section": "",
+    "text": "Ein tieferer Einblick in die Tonarten",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Spezifischerer Einblick in die Tonarten</span>"
+    ]
   },
   {
     "objectID": "einfluss_tonart_spezifischer.html#ein-tieferer-einblick-in-die-tonarten",
     "href": "einfluss_tonart_spezifischer.html#ein-tieferer-einblick-in-die-tonarten",
     "title": "4  Spezifischerer Einblick in die Tonarten",
-    "section": "Ein tieferer Einblick in die Tonarten",
-    "text": "Ein tieferer Einblick in die Tonarten\n\nDie Tonarten lassen sich noch weiter aufschlüsseln\nIm folgendem Diagramm sehen Sie ein Überblick\n\n\n\n\n\n\n\n\n\n\nBeobachtungen:\n\nCis-Dur/Moll und E-Dur/Moll zeichnen sich durch besonders hohe Streamingzahlen aus.\nInteressanterweise haben einige weniger gebräuchliche Tonarten wie A-Dur/Moll auch ihren Weg in die Charts gefunden.\nDiese Vielfalt in den Tonarten spiegelt die Bandbreite der musikalischen Ausdrucksformen und Vorlieben der Hörer wider."
+    "section": "",
+    "text": "Die Tonarten lassen sich noch weiter aufschlüsseln\nIm folgendem Diagramm sehen Sie ein Überblick\n\n\n\nBeobachtungen:\n\nCis-Dur/Moll und E-Dur/Moll zeichnen sich durch besonders hohe Streamingzahlen aus.\nInteressanterweise haben einige weniger gebräuchliche Tonarten wie A-Dur/Moll auch ihren Weg in die Charts gefunden.\nDiese Vielfalt in den Tonarten spiegelt die Bandbreite der musikalischen Ausdrucksformen und Vorlieben der Hörer wider.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Spezifischerer Einblick in die Tonarten</span>"
+    ]
+  },
+  {
+    "objectID": "release_month.html",
+    "href": "release_month.html",
+    "title": "5  Einfluss des Veröffentlichungsmonats",
+    "section": "",
+    "text": "Trends in den Veröffentlichungsmonaten 2023",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Einfluss des Veröffentlichungsmonats</span>"
+    ]
   },
   {
     "objectID": "release_month.html#trends-in-den-veröffentlichungsmonaten-2023",
     "href": "release_month.html#trends-in-den-veröffentlichungsmonaten-2023",
     "title": "5  Einfluss des Veröffentlichungsmonats",
-    "section": "Trends in den Veröffentlichungsmonaten 2023",
-    "text": "Trends in den Veröffentlichungsmonaten 2023\n\nDie Analyse des Veröffentlichungszeitpunkts bietet Einblicke, wann Künstler und Labels ihre Songs bevorzugt veröffentlichen.\nDas folgende Liniendiagramm zeigt die Anzahl der veröffentlichten Songs pro Monat im Jahr 2023.\n\n\n\n\n\n\n\n\n\n\nBeobachtungen:\n\nBestimmte Monate wie Mai und Januar zeigen eine Spitze in der Anzahl der Veröffentlichungen.\nEine solche zeitliche Verteilung kann strategische Entscheidungen von Musikproduzenten und Künstlern widerspiegeln."
+    "section": "",
+    "text": "Die Analyse des Veröffentlichungszeitpunkts bietet Einblicke, wann Künstler und Labels ihre Songs bevorzugt veröffentlichen.\nDas folgende Liniendiagramm zeigt die Anzahl der veröffentlichten Songs pro Monat im Jahr 2023.\n\n\n\nBeobachtungen:\n\nBestimmte Monate wie Mai und Januar zeigen eine Spitze in der Anzahl der Veröffentlichungen.\nEine solche zeitliche Verteilung kann strategische Entscheidungen von Musikproduzenten und Künstlern widerspiegeln.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Einfluss des Veröffentlichungsmonats</span>"
+    ]
+  },
+  {
+    "objectID": "speechie.html",
+    "href": "speechie.html",
+    "title": "6  Speechiness und Streamingzahlen",
+    "section": "",
+    "text": "Sprachgehalt und seine Auswirkungen auf die Beliebtheit\n/home/runner/.local/lib/python3.10/site-packages/sklearn/base.py:486: UserWarning: X has feature names, but LinearRegression was fitted without feature names\n  warnings.warn(",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Speechiness und Streamingzahlen</span>"
+    ]
   },
   {
     "objectID": "speechie.html#sprachgehalt-und-seine-auswirkungen-auf-die-beliebtheit",
     "href": "speechie.html#sprachgehalt-und-seine-auswirkungen-auf-die-beliebtheit",
     "title": "6  Speechiness und Streamingzahlen",
-    "section": "Sprachgehalt und seine Auswirkungen auf die Beliebtheit",
-    "text": "Sprachgehalt und seine Auswirkungen auf die Beliebtheit\n\nDie Speechiness eines Songs beschreibt den Anteil gesprochener Worte im Verhältnis zur Gesamtlänge des Tracks.\nDer folgende Scatterplot zeigt die Beziehung zwischen Speechiness und der Anzahl der Streams.\n\n\n\n/home/runner/.local/lib/python3.10/site-packages/sklearn/base.py:486: UserWarning: X has feature names, but LinearRegression was fitted without feature names\n  warnings.warn(\n\n\n\n\n\n\n\n\n\nBeobachtungen:\n\nEs gibt einen sichtbaren Trend, dass Songs mit höherer Speechiness tendenziell weniger Streams erhalten.\nDies könnte darauf hindeuten, dass Songs mit weniger gesprochenen Worten und mehr melodischen Elementen bei den Hörern beliebter sind.\nDiese Informationen können für Künstler und Produzenten wertvoll sein, um die Ausrichtung ihres musikalischen Stils zu planen."
+    "section": "",
+    "text": "Die Speechiness eines Songs beschreibt den Anteil gesprochener Worte im Verhältnis zur Gesamtlänge des Tracks.\nDer folgende Scatterplot zeigt die Beziehung zwischen Speechiness und der Anzahl der Streams.\n\n\n\nBeobachtungen:\n\nEs gibt einen sichtbaren Trend, dass Songs mit höherer Speechiness tendenziell weniger Streams erhalten.\nDies könnte darauf hindeuten, dass Songs mit weniger gesprochenen Worten und mehr melodischen Elementen bei den Hörern beliebter sind.\nDiese Informationen können für Künstler und Produzenten wertvoll sein, um die Ausrichtung ihres musikalischen Stils zu planen.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Speechiness und Streamingzahlen</span>"
+    ]
+  },
+  {
+    "objectID": "energy.html",
+    "href": "energy.html",
+    "title": "7  Verteilung der Energy-Werte",
+    "section": "",
+    "text": "Energie in der Musik: Ein Schlüsselelement für Beliebtheit\n/tmp/ipykernel_2238/1079906506.py:9: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.\n  energy_grouped = df.groupby(pd.cut(df['energy_%'], range(",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Verteilung der Energy-Werte</span>"
+    ]
   },
   {
     "objectID": "energy.html#energie-in-der-musik-ein-schlüsselelement-für-beliebtheit",
     "href": "energy.html#energie-in-der-musik-ein-schlüsselelement-für-beliebtheit",
     "title": "7  Verteilung der Energy-Werte",
-    "section": "Energie in der Musik: Ein Schlüsselelement für Beliebtheit",
-    "text": "Energie in der Musik: Ein Schlüsselelement für Beliebtheit\n\n“Energy” in Songs beschreibt das Maß an Intensität und Aktivität, oft verbunden mit schnelleren Tempi, lauterer Lautstärke und dynamischerem Klang.\nDas folgende Verteilungsdiagramm zeigt die Häufigkeit verschiedener Energy-Werte unter den erfolgreichsten Songs.\n\n\n\n/tmp/ipykernel_2285/1079906506.py:9: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.\n  energy_grouped = df.groupby(pd.cut(df['energy_%'], range(\n\n\n\n\n\n\n\n\n\nBeobachtungen:\n\nEin signifikanter Anteil der Songs hat Energy-Werte im Bereich von 50-80. Am Besten scheint es mit einem Energy-Wert von 60-70 zu laufen.\nDies deutet darauf hin, dass Songs mit mittlerer bis hoher Energie bei den Hörern besonders beliebt sind.\nDie Daten legen nahe, dass Songs mit diesen Energy-Werten eine größere Chance haben, in den Streaming-Charts erfolgreich zu sein."
+    "section": "",
+    "text": "“Energy” in Songs beschreibt das Maß an Intensität und Aktivität, oft verbunden mit schnelleren Tempi, lauterer Lautstärke und dynamischerem Klang.\nDas folgende Verteilungsdiagramm zeigt die Häufigkeit verschiedener Energy-Werte unter den erfolgreichsten Songs.\n\n\n\nBeobachtungen:\n\nEin signifikanter Anteil der Songs hat Energy-Werte im Bereich von 50-80. Am Besten scheint es mit einem Energy-Wert von 60-70 zu laufen.\nDies deutet darauf hin, dass Songs mit mittlerer bis hoher Energie bei den Hörern besonders beliebt sind.\nDie Daten legen nahe, dass Songs mit diesen Energy-Werten eine größere Chance haben, in den Streaming-Charts erfolgreich zu sein.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Verteilung der Energy-Werte</span>"
+    ]
+  },
+  {
+    "objectID": "map.html",
+    "href": "map.html",
+    "title": "8  Globale Verteilung der Top-Künstler",
+    "section": "",
+    "text": "Woher kommen die erfolgreichsten Spotify-Künstler?\n/tmp/ipykernel_2267/1080206803.py:61: FutureWarning: The geopandas.dataset module is deprecated and will be removed in GeoPandas 1.0. You can get the original 'naturalearth_lowres' data from https://www.naturalearthdata.com/downloads/110m-cultural-vectors/.\n  world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))\n/tmp/ipykernel_2267/1080206803.py:65: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.\nThe behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.\n\nFor example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.\n\n\n  world['artist_count'].fillna(0, inplace=True)",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Globale Verteilung der Top-Künstler</span>"
+    ]
   },
   {
     "objectID": "map.html#woher-kommen-die-erfolgreichsten-spotify-künstler",
     "href": "map.html#woher-kommen-die-erfolgreichsten-spotify-künstler",
     "title": "8  Globale Verteilung der Top-Künstler",
-    "section": "Woher kommen die erfolgreichsten Spotify-Künstler?",
-    "text": "Woher kommen die erfolgreichsten Spotify-Künstler?\n\nDie Verteilung der Künstler zeigt interessante geografische Trends und Hotspots in der Musikindustrie.\nDie folgende Karte zeigt die Anzahl der Top-Künstler aus verschiedenen Ländern.\n\n\n\n/tmp/ipykernel_2315/1080206803.py:61: FutureWarning: The geopandas.dataset module is deprecated and will be removed in GeoPandas 1.0. You can get the original 'naturalearth_lowres' data from https://www.naturalearthdata.com/downloads/110m-cultural-vectors/.\n  world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))\n/tmp/ipykernel_2315/1080206803.py:65: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.\nThe behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.\n\nFor example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.\n\n\n  world['artist_count'].fillna(0, inplace=True)\n\n\n\n\n\n\n\n\n\nTop 7 Länder nach Anzahl der Künstler:\n\nVereinigte Staaten von Amerika - 368 Künstler\nVereinigtes Königreich - 93 Künstler\nPuerto Rico - 62 Künstler\nSüdkorea - 52 Künstler\nKanada - 44 Künstler\nKolumbien - 36 Künstler\nMexiko - 29 Künstler\n\n\nDiese Karte unterstreicht die globale Reichweite der Musik und die Vielfalt der Herkunftsländer erfolgreicher Künstler.\n\n\n…\n\n\nAuffälligkeiten und Beobachtungen:\n\nStarke Präsenz in Nordamerika und Europa: Ein Großteil der Top-Künstler stammt aus den USA und dem Vereinigten Königreich, was die starke Rolle dieser Länder in der globalen Musikindustrie unterstreicht.\nLateinamerikanische Künstler im Aufschwung: Länder wie Puerto Rico und Kolumbien stechen hervor, was auf die wachsende Popularität lateinamerikanischer Musikgenres hinweist.\nAsiatische Einflüsse: Südkorea, bekannt für K-Pop, zeigt eine beeindruckende Anzahl von Künstlern, was die globale Reichweite dieses Genres demonstriert.\nDiversität in den Musikstilen: Die Präsenz von Ländern wie Nigeria und Indien deutet auf eine Vielfalt in den Musikstilen hin, die global Anklang finden.\nUnterrepräsentation bestimmter Regionen: Es gibt möglicherweise Regionen oder Länder, die in den Top-Charts unterrepräsentiert sind, was auf kulturelle, wirtschaftliche oder infrastrukturelle Faktoren zurückzuführen sein könnte.\nDiese Karte unterstreicht die globale Reichweite der Musik und die Vielfalt der Herkunftsländer erfolgreicher Künstler."
+    "section": "",
+    "text": "Die Verteilung der Künstler zeigt interessante geografische Trends und Hotspots in der Musikindustrie.\nDie folgende Karte zeigt die Anzahl der Top-Künstler aus verschiedenen Ländern.\n\n\n\nTop 7 Länder nach Anzahl der Künstler:\n\nVereinigte Staaten von Amerika - 368 Künstler\nVereinigtes Königreich - 93 Künstler\nPuerto Rico - 62 Künstler\nSüdkorea - 52 Künstler\nKanada - 44 Künstler\nKolumbien - 36 Künstler\nMexiko - 29 Künstler\n\n\nDiese Karte unterstreicht die globale Reichweite der Musik und die Vielfalt der Herkunftsländer erfolgreicher Künstler.\n\n\n…\n\n\nAuffälligkeiten und Beobachtungen:\n\nStarke Präsenz in Nordamerika und Europa: Ein Großteil der Top-Künstler stammt aus den USA und dem Vereinigten Königreich, was die starke Rolle dieser Länder in der globalen Musikindustrie unterstreicht.\nLateinamerikanische Künstler im Aufschwung: Länder wie Puerto Rico und Kolumbien stechen hervor, was auf die wachsende Popularität lateinamerikanischer Musikgenres hinweist.\nAsiatische Einflüsse: Südkorea, bekannt für K-Pop, zeigt eine beeindruckende Anzahl von Künstlern, was die globale Reichweite dieses Genres demonstriert.\nDiversität in den Musikstilen: Die Präsenz von Ländern wie Nigeria und Indien deutet auf eine Vielfalt in den Musikstilen hin, die global Anklang finden.\nUnterrepräsentation bestimmter Regionen: Es gibt möglicherweise Regionen oder Länder, die in den Top-Charts unterrepräsentiert sind, was auf kulturelle, wirtschaftliche oder infrastrukturelle Faktoren zurückzuführen sein könnte.\nDiese Karte unterstreicht die globale Reichweite der Musik und die Vielfalt der Herkunftsländer erfolgreicher Künstler.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Globale Verteilung der Top-Künstler</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "9  Zusammenfassung und Fazit",
+    "section": "",
+    "text": "Schlüsselerkenntnisse aus unserer Analyse",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Zusammenfassung und Fazit</span>"
+    ]
   },
   {
     "objectID": "summary.html#schlüsselerkenntnisse-aus-unserer-analyse",
     "href": "summary.html#schlüsselerkenntnisse-aus-unserer-analyse",
     "title": "9  Zusammenfassung und Fazit",
-    "section": "Schlüsselerkenntnisse aus unserer Analyse",
-    "text": "Schlüsselerkenntnisse aus unserer Analyse\n\nDie Populärsten Künstler tendieren zu bestimmten musikalischen Stilen und kommen häufig aus Ländern wie den USA und dem Vereinigten Königreich.\nTonarten und ihre Beliebtheit: Einige Tonarten, insbesondere Cis-Dur und E-Dur, zeigen eine höhere Tendenz, in den Top-Streaming-Songs vertreten zu sein.\nVeröffentlichungsmonate: Bestimmte Monate, wie Mai und Jnauar, sind beliebte Zeiten für die Veröffentlichung neuer Songs.\nSpeechiness vs. Streams: Songs mit niedrigerer Speechiness neigen zu höheren Streamingzahlen, was auf eine Präferenz für melodiösere Musik hinweist.\nEnergy: Songs mit mittleren bis hohen Energy-Werten (60-80%) sind unter den Top-Streams besonders prominent vertreten.\nGlobale Verteilung der Künstler: Es gibt eine breite geografische Streuung der erfolgreichen Künstler, wobei Nordamerika und Europa dominieren, aber auch andere Regionen wichtige Beiträge leisten.\n\n\nFazit:\n\nDiese Analyse zeigt, dass Erfolg in der Musikindustrie von einer Vielzahl von Faktoren abhängt, darunter musikalische Eigenschaften, geografische Herkunft der Künstler und Timing der Veröffentlichung.\nDie Erkenntnisse bieten wertvolle Einblicke für Künstler, Produzenten und Labels, um Strategien in der sich ständig verändernden Musiklandschaft zu entwickeln und anzupassen.\n\nVielen Dank für Ihre Aufmerksamkeit!"
+    "section": "",
+    "text": "Die Populärsten Künstler tendieren zu bestimmten musikalischen Stilen und kommen häufig aus Ländern wie den USA und dem Vereinigten Königreich.\nTonarten und ihre Beliebtheit: Einige Tonarten, insbesondere Cis-Dur und E-Dur, zeigen eine höhere Tendenz, in den Top-Streaming-Songs vertreten zu sein.\nVeröffentlichungsmonate: Bestimmte Monate, wie Mai und Jnauar, sind beliebte Zeiten für die Veröffentlichung neuer Songs.\nSpeechiness vs. Streams: Songs mit niedrigerer Speechiness neigen zu höheren Streamingzahlen, was auf eine Präferenz für melodiösere Musik hinweist.\nEnergy: Songs mit mittleren bis hohen Energy-Werten (60-80%) sind unter den Top-Streams besonders prominent vertreten.\nGlobale Verteilung der Künstler: Es gibt eine breite geografische Streuung der erfolgreichen Künstler, wobei Nordamerika und Europa dominieren, aber auch andere Regionen wichtige Beiträge leisten.\n\n\nFazit:\n\nDiese Analyse zeigt, dass Erfolg in der Musikindustrie von einer Vielzahl von Faktoren abhängt, darunter musikalische Eigenschaften, geografische Herkunft der Künstler und Timing der Veröffentlichung.\nDie Erkenntnisse bieten wertvolle Einblicke für Künstler, Produzenten und Labels, um Strategien in der sich ständig verändernden Musiklandschaft zu entwickeln und anzupassen.\n\nVielen Dank für Ihre Aufmerksamkeit!",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Zusammenfassung und Fazit</span>"
+    ]
   }
 ]
