@@ -124,7 +124,7 @@
     "href": "energy.html",
     "title": "7  Verteilung der Energy-Werte",
     "section": "",
-    "text": "Energie in der Musik: Ein Schlüsselelement für Beliebtheit\n/tmp/ipykernel_2238/1079906506.py:9: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.\n  energy_grouped = df.groupby(pd.cut(df['energy_%'], range(",
+    "text": "Energie in der Musik: Ein Schlüsselelement für Beliebtheit\n/tmp/ipykernel_2257/1079906506.py:9: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.\n  energy_grouped = df.groupby(pd.cut(df['energy_%'], range(",
     "crumbs": [
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Verteilung der Energy-Werte</span>"
     ]
@@ -144,7 +144,7 @@
     "href": "map.html",
     "title": "8  Globale Verteilung der Top-Künstler",
     "section": "",
-    "text": "Woher kommen die erfolgreichsten Spotify-Künstler?\n/tmp/ipykernel_2267/1080206803.py:61: FutureWarning: The geopandas.dataset module is deprecated and will be removed in GeoPandas 1.0. You can get the original 'naturalearth_lowres' data from https://www.naturalearthdata.com/downloads/110m-cultural-vectors/.\n  world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))\n/tmp/ipykernel_2267/1080206803.py:65: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.\nThe behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.\n\nFor example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.\n\n\n  world['artist_count'].fillna(0, inplace=True)",
+    "text": "Woher kommen die erfolgreichsten Spotify-Künstler?\n/tmp/ipykernel_2285/1080206803.py:61: FutureWarning: The geopandas.dataset module is deprecated and will be removed in GeoPandas 1.0. You can get the original 'naturalearth_lowres' data from https://www.naturalearthdata.com/downloads/110m-cultural-vectors/.\n  world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))\n/tmp/ipykernel_2285/1080206803.py:65: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.\nThe behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.\n\nFor example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.\n\n\n  world['artist_count'].fillna(0, inplace=True)",
     "crumbs": [
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Globale Verteilung der Top-Künstler</span>"
     ]
