@@ -1,0 +1,151 @@
+# Globale Verteilung der Top-Künstler
+
+## Woher kommen die erfolgreichsten Spotify-Künstler? {.unnumbered}
+
+- Die Verteilung der Künstler zeigt interessante geografische Trends und Hotspots in der Musikindustrie.
+- Die folgende Karte zeigt die Anzahl der Top-Künstler aus verschiedenen Ländern.
+
+```{python}
+import pandas as pd
+import altair as alt
+
+file_path = 'data_exploration/spotify_angereichert_cleaned.csv'
+df = pd.read_csv(file_path)
+
+df.drop(['Unnamed: 0'], axis=1, inplace=True)
+
+import altair as alt
+import geopandas as gpd
+import json
+
+# Zuordnung von Städten/Regionen zu Ländern
+country_mapping = {
+    'England': 'United Kingdom',
+    'Scotland': 'United Kingdom',
+    'Buenos Aires': 'Argentina',
+    'Guadalajara': 'Mexico',
+    'Nashville': 'United States of America',
+    'Downingtown': 'United States of America',
+    'McAllen': 'United States of America',
+    'Cabreúva': 'Brazil',
+    'Monroe': 'United States of America',
+    'Torrance': 'United States of America',
+    'Los Angeles': 'United States of America',
+    'Helsinki': 'Finland',
+    'Manchester': 'United Kingdom',
+    'Berlin': 'Germany',
+    'Ipswich': 'United Kingdom',
+    'Goiás': 'Brazil',
+    'Mato Grosso do Sul': 'Brazil',
+    'Las Palmas de Gran Canaria': 'Spain',
+    'Providence': 'United States of America',
+    'Orlando': 'United States of America',
+    'New York': 'United States of America',
+    'Austin': 'United States of America',
+    'Türkiye': 'Turkey',
+    'Punjab': 'India',
+    'Boston': 'United States of America',
+    'Amazonas': 'Brazil',
+    'Rio de Janeiro': 'Brazil',
+    'Sundsvall': 'Sweden',
+    'Gujarat': 'India',
+    'Philadelphia': 'United States of America',
+    'United States': 'United States of America',
+    'Oshawa': 'Canada'
+}
+
+# Aktualisieren Sie Ihren DataFrame
+df['artist_country'] = df['artist_country'].replace(country_mapping)
+
+# Zusätzliche Ersetzung für "United States"
+df['artist_country'] = df['artist_country'].replace({'United States': 'United States of America'})
+
+
+# Erstellen des DataFrames 'artist_count_by_country' wie in Ihrem Code
+artist_count_by_country = df['artist_country'].value_counts().reset_index()
+artist_count_by_country.columns = ['name', 'artist_count']
+
+# Laden der Weltkarte
+world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))
+
+# Zusammenführen der Daten
+world = world.merge(artist_count_by_country, on='name', how='left')
+world['artist_count'].fillna(0, inplace=True)
+
+# Konvertieren des GeoPandas-DataFrames in GeoJSON
+json_data = json.loads(world.to_json())
+
+# Basis-Karte mit angepassten Eigenschaften
+base = alt.Chart(alt.Data(values=json_data['features'])).mark_geoshape(
+    stroke='black',
+    strokeWidth=0.7
+).encode(
+    color=alt.condition(
+        'datum.properties.artist_count > 0',
+        alt.Color('properties.artist_count:Q', scale=alt.Scale(domain=[1, 95], scheme='blues'), legend=alt.Legend(title="Anzahl der Künstler")),
+        alt.value('white')  # Farbe für Länder ohne Daten
+    ),
+    tooltip=[
+        alt.Tooltip('properties.name:N', title='Land'),
+        alt.Tooltip('properties.artist_count:Q', title='Anzahl der Künstler')
+    ]
+).project('equirectangular').properties(
+    width=800,
+    height=500,
+    title={
+        "text": ['Weltkarte der Anzahl der Künstler nach Ländern'], 
+        "subtitle": ['Verteilung der Erfolgreichsten Künstler weltweit']
+    }
+)
+
+# Anpassen der Ansicht
+final_chart = base.configure_view(
+    strokeOpacity=0
+).configure_title(
+    fontSize=20,
+    anchor='start',
+    color='black'
+).configure_legend(
+    titleFontSize=14,
+    labelFontSize=12
+)
+
+final_chart
+
+
+
+
+
+```
+
+
+
+### Top 7 Länder nach Anzahl der Künstler: {.unnumbered}
+
+1. **Vereinigte Staaten von Amerika** - 368 Künstler
+2. **Vereinigtes Königreich** - 93 Künstler
+3. **Puerto Rico** - 62 Künstler
+4. **Südkorea** - 52 Künstler
+5. **Kanada** - 44 Künstler
+6. **Kolumbien** - 36 Künstler
+7. **Mexiko** - 29 Künstler
+
+
+- Diese Karte unterstreicht die globale Reichweite der Musik und die Vielfalt der Herkunftsländer erfolgreicher Künstler.
+
+---
+
+...
+
+### Auffälligkeiten und Beobachtungen: {.unnumbered}
+
+- **Starke Präsenz in Nordamerika und Europa:** Ein Großteil der Top-Künstler stammt aus den USA und dem Vereinigten Königreich, was die starke Rolle dieser Länder in der globalen Musikindustrie unterstreicht.
+- **Lateinamerikanische Künstler im Aufschwung:** Länder wie Puerto Rico und Kolumbien stechen hervor, was auf die wachsende Popularität lateinamerikanischer Musikgenres hinweist.
+- **Asiatische Einflüsse:** Südkorea, bekannt für K-Pop, zeigt eine beeindruckende Anzahl von Künstlern, was die globale Reichweite dieses Genres demonstriert.
+- **Diversität in den Musikstilen:** Die Präsenz von Ländern wie Nigeria und Indien deutet auf eine Vielfalt in den Musikstilen hin, die global Anklang finden.
+- **Unterrepräsentation bestimmter Regionen:** Es gibt möglicherweise Regionen oder Länder, die in den Top-Charts unterrepräsentiert sind, was auf kulturelle, wirtschaftliche oder infrastrukturelle Faktoren zurückzuführen sein könnte.
+
+- Diese Karte unterstreicht die globale Reichweite der Musik und die Vielfalt der Herkunftsländer erfolgreicher Künstler.
+
+---
+

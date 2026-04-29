@@ -1,0 +1,20 @@
+# Zusammenfassung und Fazit
+
+## Schlüsselerkenntnisse aus unserer Analyse {.unnumbered}
+
+- Die **Populärsten Künstler** tendieren zu bestimmten musikalischen Stilen und kommen häufig aus Ländern wie den USA und dem Vereinigten Königreich.
+- **Tonarten und ihre Beliebtheit:** Einige Tonarten, insbesondere Cis-Dur und E-Dur, zeigen eine höhere Tendenz, in den Top-Streaming-Songs vertreten zu sein.
+- **Veröffentlichungsmonate:** Bestimmte Monate, wie Mai und Jnauar, sind beliebte Zeiten für die Veröffentlichung neuer Songs.
+- **Speechiness vs. Streams:** Songs mit niedrigerer Speechiness neigen zu höheren Streamingzahlen, was auf eine Präferenz für melodiösere Musik hinweist.
+- **Energy:** Songs mit mittleren bis hohen Energy-Werten (60-80%) sind unter den Top-Streams besonders prominent vertreten.
+- **Globale Verteilung der Künstler:** Es gibt eine breite geografische Streuung der erfolgreichen Künstler, wobei Nordamerika und Europa dominieren, aber auch andere Regionen wichtige Beiträge leisten.
+
+### Fazit: {.unnumbered}
+
+- Diese Analyse zeigt, dass Erfolg in der Musikindustrie von einer Vielzahl von Faktoren abhängt, darunter musikalische Eigenschaften, geografische Herkunft der Künstler und Timing der Veröffentlichung.
+- Die Erkenntnisse bieten wertvolle Einblicke für Künstler, Produzenten und Labels, um Strategien in der sich ständig verändernden Musiklandschaft zu entwickeln und anzupassen.
+
+Vielen Dank für Ihre Aufmerksamkeit!
+
+---
+

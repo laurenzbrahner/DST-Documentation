@@ -1,0 +1,95 @@
+# Verteilung der Energy-Werte
+
+## Energie in der Musik: Ein Schlüsselelement für Beliebtheit {.unnumbered}
+
+- "Energy" in Songs beschreibt das Maß an Intensität und Aktivität, oft verbunden mit schnelleren Tempi, lauterer Lautstärke und dynamischerem Klang.
+- Das folgende Verteilungsdiagramm zeigt die Häufigkeit verschiedener Energy-Werte unter den erfolgreichsten Songs.
+
+
+
+```{python}
+
+import pandas as pd
+import altair as alt
+
+file_path = 'data_exploration/spotify_angereichert_cleaned.csv'
+df = pd.read_csv(file_path)
+
+df.drop(['Unnamed: 0'], axis=1, inplace=True)
+
+energy_grouped = df.groupby(pd.cut(df['energy_%'], range(
+    0, 101, 10))).size().reset_index(name='average_song_count')
+
+# Umbenennung der Spalte für die Energiebereiche
+energy_grouped.columns = ['energy_range', 'average_song_count']
+
+energy_grouped['energy_range'] = energy_grouped['energy_range'].apply(
+    lambda x: f"{x.left}-{x.right}")
+
+
+# energy_grouped Linw Plot
+
+
+energy_grouped_line_chart = alt.Chart(energy_grouped).mark_line(interpolate='monotone').encode(
+    x=alt.X('energy_range', axis=alt.Axis(
+        title='Energy %', labelFontSize=14)),
+    y=alt.Y('average_song_count', axis=alt.Axis(
+        title='Anzahl der Songs', titleFontSize=16, labelFontSize=14)),
+    color=alt.value('red'),
+    tooltip=['energy_range', 'average_song_count']
+)
+
+energy_grouped_chart = alt.Chart(energy_grouped).mark_bar(opacity=0.4).encode(
+    x=alt.X('energy_range', axis=alt.Axis(
+        title='Energy %', labelFontSize=14)),
+    y=alt.Y('average_song_count', axis=alt.Axis(
+        title='Anzahl der Songs', titleFontSize=20, labelFontSize=14)),
+    color=alt.Color('energy_range',  scale=alt.Scale(
+        scheme='viridis'), legend=None),
+    tooltip=['energy_range', 'average_song_count']
+)
+
+
+x = alt.layer(energy_grouped_chart, energy_grouped_line_chart).properties(
+    title={'text': 'Durchschnittliche Anzahl der Songs nach Energy', 'dy': -20},
+    width=600,
+    height=400
+).configure_title(
+    fontSize=25,
+    anchor='start'
+).configure_axis(
+    labelFontSize=14,
+    titleFontSize=20,
+    titleColor='gray',
+    labelColor='gray',
+    titlePadding=12,
+    grid=False
+).configure_legend(
+    titleFontSize=16,
+    labelFontSize=14
+).configure_view(
+    strokeWidth=0,
+).configure_axisX(
+    labelAngle=0,
+    titleAnchor='start'
+).configure_axisY(
+    grid=False,
+    titleAnchor='end',
+    titleFontSize=20
+)
+
+x
+
+
+
+```
+
+### Beobachtungen: {.unnumbered}
+
+- Ein signifikanter Anteil der Songs hat Energy-Werte im Bereich von **50-80**. Am Besten scheint es mit einem Energy-Wert von **60-70** zu laufen.
+- Dies deutet darauf hin, dass Songs mit mittlerer bis hoher Energie bei den Hörern besonders beliebt sind.
+
+- Die Daten legen nahe, dass Songs mit diesen Energy-Werten eine größere Chance haben, in den Streaming-Charts erfolgreich zu sein.
+
+
+

@@ -1,0 +1,10 @@
+
+
+## Vorwort {.unnumbered}
+
+
+Im Folgenden wird anahnd eines Datensatzes, welcher die Erfolgreichsten Songs und Infos zu ihnen enthält, die aktuellen trends in der Musikbranche analysiert.
+
+
+
+

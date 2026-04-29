@@ -1,0 +1,44 @@
+project:
+  type: book
+
+execute:
+  freeze: auto
+  echo: false
+  eval: true
+
+book:
+  page-navigation: true
+  title: "Soptify Analyse"
+  site-url: "https://laurenzbrahner.github.io/DST-Documentation/" # replace ORGNAME and REPONAME
+  repo-url: https://github.com/laurenzbrahner/DST-Documentation # replace ORGNAME and REPONAME
+  repo-actions: [edit, issue]
+  open-graph: true
+  image: "/images/logo.png"
+  favicon: "/images/logo.png"
+  search:
+    type: overlay  
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - basicinfo.qmd
+    - einfluss_tonart.qmd
+    - einfluss_tonart_spezifischer.qmd
+    - release_month.qmd
+    - speechie.qmd
+    - energy.qmd
+    - map.qmd
+    - summary.qmd
+    - references.qmd
+   
+
+format:
+  html:
+    toc: true
+    theme:
+      light: [cosmo, style/style.scss]
+      dark: [cosmo, style/dark.scss]
+    mainfont: "Atkinson Hyperlegible"
+    code-copy: True
+    code-overflow: wrap
+
+bibliography: references.bib

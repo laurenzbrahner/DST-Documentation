@@ -1,0 +1,72 @@
+# Spezifischerer Einblick in die Tonarten
+
+## Ein tieferer Einblick in die Tonarten {.unnumbered}
+
+- Die Tonarten lassen sich noch weiter aufschlüsseln
+- Im folgendem Diagramm sehen Sie ein Überblick
+
+
+```{python} 
+import pandas as pd
+import altair as alt
+
+file_path = 'data_exploration/spotify_angereichert_cleaned.csv'
+df = pd.read_csv(file_path)
+
+df.drop(['Unnamed: 0'], axis=1, inplace=True)
+
+
+key_streams = df.groupby('key')['streams'].mean()
+
+
+key_streams_df = key_streams.reset_index()
+
+
+key_streams_chart = alt.Chart(key_streams_df).mark_bar(clip=True).encode(
+    x=alt.X('key',  axis=alt.Axis(title='Key', labelFontSize=14)),
+    y=alt.Y('streams', scale=alt.Scale(domain=[400000000, 650000000]), axis=alt.Axis(title='Streams (Millionen) Ø ', titleFontSize=20,
+            labelFontSize=14, format='.0s', tickCount=5, tickMinStep=1e9, labelExpr='datum.value / 1e6')),
+    color=alt.Color('key', legend=None,),
+    tooltip=['key', 'streams']
+).properties(
+    title={'text': 'Durchschnittliche Streams nach Key', 'dy': -20},
+    width=600,
+    height=400
+).configure_title(
+    fontSize=25,
+    anchor='start'
+).configure_axis(
+    labelFontSize=14,
+    titleFontSize=20,
+    titleColor='gray',
+    labelColor='gray',
+    titlePadding=12,
+    grid=False
+).configure_legend(
+    titleFontSize=16,
+    labelFontSize=14
+).configure_view(
+    strokeWidth=0,
+).configure_axisX(
+    labelAngle=0,
+    titleAnchor='start'
+).configure_axisY(
+    grid=False,
+    titleAnchor='end',
+    titleFontSize=20
+)
+
+key_streams_chart
+
+
+```
+
+### Beobachtungen: {.unnumbered}
+
+- **Cis-Dur/Moll** und **E-Dur/Moll** zeichnen sich durch besonders hohe Streamingzahlen aus.
+- Interessanterweise haben einige weniger gebräuchliche Tonarten wie **A-Dur/Moll** auch ihren Weg in die Charts gefunden.
+
+- Diese Vielfalt in den Tonarten spiegelt die Bandbreite der musikalischen Ausdrucksformen und Vorlieben der Hörer wider.
+
+---
+

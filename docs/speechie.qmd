@@ -1,0 +1,92 @@
+# Speechiness und Streamingzahlen
+
+## Sprachgehalt und seine Auswirkungen auf die Beliebtheit {.unnumbered}
+
+- Die Speechiness eines Songs beschreibt den Anteil gesprochener Worte im Verhältnis zur Gesamtlänge des Tracks.
+- Der folgende Scatterplot zeigt die Beziehung zwischen Speechiness und der Anzahl der Streams.
+
+
+```{python}
+
+import pandas as pd
+import altair as alt
+import numpy as np
+from sklearn.linear_model import LinearRegression
+
+file_path = 'data_exploration/spotify_angereichert_cleaned.csv'
+df = pd.read_csv(file_path)
+
+df.drop(['Unnamed: 0'], axis=1, inplace=True)
+
+agg_df = df.groupby('speechiness_%').agg({'streams': 'mean'}).reset_index()
+
+
+X = agg_df['speechiness_%'].values.reshape(-1, 1)
+y = agg_df['streams'].values
+reg = LinearRegression().fit(X, y)
+
+# Erstellen Sie eine DataFrame für die Regressionslinie
+regression_df = pd.DataFrame({'speechiness_%': np.linspace(
+    df['speechiness_%'].min(), df['speechiness_%'].max(), 100)})
+regression_df['streams_predicted'] = reg.predict(
+    regression_df[['speechiness_%']])
+
+
+regression_line = alt.Chart(regression_df).mark_line(color='red').encode(
+    x=alt.X('speechiness_%'),
+    y=alt.Y('streams_predicted')
+)
+
+custom_legend_values = [0, 1500000000]
+
+scatter_plot = alt.Chart(agg_df).mark_circle(size=60, opacity=0.7).encode(
+    x=alt.X('speechiness_%', axis=alt.Axis(
+        title='Speechiness %', labelFontSize=14)),
+    y=alt.Y('streams', axis=alt.Axis(title='Streams (Milliarden)', titleFontSize=16,
+            labelFontSize=14, format='.0s', tickCount=5, tickMinStep=1e9, labelExpr='datum.value / 1e9')),
+    color=alt.Color('streams', scale=alt.Scale(scheme="viridis", domain=custom_legend_values), legend=alt.Legend(title="Streams (Mrd.)", titleFontSize=20,
+                                                                                                                 labelFontSize=12, format='.0s', tickCount=5, tickMinStep=1e9, labelExpr='datum.value / 1e9')),
+    tooltip=['speechiness_%', 'streams']
+)
+
+scatter_plot_1 = alt.layer(scatter_plot, regression_line).properties(
+    title={'text': 'Beziehung zwischen Speechiness und Streams', 'dy': -20},
+    width=475,
+    height=400
+).configure_title(
+    fontSize=25,
+    anchor='start'
+).configure_axis(
+    labelFontSize=14,
+    titleFontSize=20,
+    titleColor='gray',
+    labelColor='gray',
+    titlePadding=12,
+    grid=False
+).configure_legend(
+    titleFontSize=16,
+    labelFontSize=14
+).configure_view(
+    strokeWidth=0,
+).configure_axisX(
+    labelAngle=0,
+    titleAnchor='start'
+).configure_axisY(
+    grid=False,
+    titleAnchor='end',
+    titleFontSize=20
+)
+
+
+scatter_plot_1
+```
+
+### Beobachtungen: {.unnumbered}
+
+- Es gibt einen sichtbaren Trend, dass Songs mit höherer Speechiness tendenziell weniger Streams erhalten.
+- Dies könnte darauf hindeuten, dass Songs mit weniger gesprochenen Worten und mehr melodischen Elementen bei den Hörern beliebter sind.
+
+- Diese Informationen können für Künstler und Produzenten wertvoll sein, um die Ausrichtung ihres musikalischen Stils zu planen.
+
+---
+

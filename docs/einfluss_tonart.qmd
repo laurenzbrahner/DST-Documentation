@@ -1,0 +1,75 @@
+# Der Einfluss der Tonart auf die Streamingzahlen
+
+## Wie Tonarten die Popularität beeinflussen {.unnumbered}
+
+- Unsere Analyse zeigt, dass bestimmte Tonarten in den Top-Streaming-Songs von 2023 überrepräsentiert sind.
+- Dies legt nahe, dass die Tonart einen signifikanten Einfluss auf die Beliebtheit und den Erfolg eines Songs haben kann.
+
+
+```{python} 
+import pandas as pd
+import altair as alt
+
+file_path = 'data_exploration/spotify_angereichert_cleaned.csv'
+df = pd.read_csv(file_path)
+
+df.drop(['Unnamed: 0'], axis=1, inplace=True)
+
+mode_streams = df.groupby('mode')['streams'].mean()
+
+
+mode_streams_df = mode_streams.reset_index()
+
+
+mode_streams_chart = alt.Chart(mode_streams_df).mark_bar(clip=True).encode(
+    x=alt.X('mode', axis=alt.Axis(title='Tonart', labelFontSize=14)),
+    y=alt.Y('streams', scale=alt.Scale(domain=[400000000, 600000000]), axis=alt.Axis(title='Streams (Millionen) Ø ', titleFontSize=20,
+            labelFontSize=14, format='.0s', tickCount=5, tickMinStep=1e9, labelExpr='datum.value / 1e6')),
+    color=alt.Color('mode', legend=None,),
+    tooltip=[
+        alt.Tooltip('mode', title='Tonart'),
+        alt.Tooltip('streams', title='Ø Streams')
+    ]
+).properties(
+    title={'text': 'Durchschnittliche Streams nach Tonart', 'dy': -20},
+    width=550,
+    height=400
+).configure_title(
+    fontSize=25,
+    anchor='start'
+).configure_axis(
+    labelFontSize=14,
+    titleFontSize=20,
+    titleColor='gray',
+    labelColor='gray',
+    titlePadding=12,
+    grid=False
+).configure_legend(
+    titleFontSize=16,
+    labelFontSize=14
+).configure_view(
+    strokeWidth=0,
+).configure_axisX(
+    labelAngle=0,
+    titleAnchor='start'
+).configure_axisY(
+    grid=False,
+    titleAnchor='end',
+    titleFontSize=20
+)
+
+mode_streams_chart
+
+
+
+```
+
+### Top Tonarten nach durchschnittlichen Streamingzahlen: {.unnumbered}
+
+1. **Major(Dur)** - Durchschnittlich 551 Millionen Streams
+2. **Minor(Moll)** - Durchschnittlich 491 Millionen Streams
+
+
+- Interessanterweise scheint Dur besonders attraktiv für Hörer zu sein, was sich in höheren Streamingzahlen wiederspiegelt.
+
+---

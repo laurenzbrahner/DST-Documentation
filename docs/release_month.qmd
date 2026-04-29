@@ -1,0 +1,87 @@
+# Einfluss des Veröffentlichungsmonats
+
+## Trends in den Veröffentlichungsmonaten 2023 {.unnumbered}
+
+- Die Analyse des Veröffentlichungszeitpunkts bietet Einblicke, wann Künstler und Labels ihre Songs bevorzugt veröffentlichen.
+- Das folgende Liniendiagramm zeigt die Anzahl der veröffentlichten Songs pro Monat im Jahr 2023.
+
+
+
+```{python}
+import pandas as pd
+import altair as alt
+
+file_path = 'data_exploration/spotify_angereichert_cleaned.csv'
+df = pd.read_csv(file_path)
+
+df.drop(['Unnamed: 0'], axis=1, inplace=True)
+
+
+# line plot Anzahl der Verföffenltichungen Monat im Jahr
+
+monthly_releases = df.groupby(
+    'released_month').size().reset_index(name='count')
+
+month_labels = {
+    1: 'Jan',
+    2: 'Feb',
+    3: 'Mar',
+    4: 'Apr',
+    5: 'May',
+    6: 'Jun',
+    7: 'Jul',
+    8: 'Aug',
+    9: 'Sep',
+    10: 'Oct',
+    11: 'Nov',
+    12: 'Dec'
+}
+
+monthly_releases['released_month'] = monthly_releases['released_month'].map(
+    month_labels)
+
+monthly_releases_chart = alt.Chart(monthly_releases).mark_line(strokeWidth=3).encode(
+    x=alt.X('released_month', axis=alt.Axis(title='Monat',
+            labelFontSize=14), sort=list(month_labels.values())),
+    y=alt.Y('count', scale=alt.Scale(domain=(30, 120)), axis=alt.Axis(
+        title='Veröffentlichungen', titleFontSize=20, labelFontSize=14,)),
+    tooltip=['released_month', 'count']
+).properties(
+    title={'text': 'Anzahl der Songveröffentlichungen nach Monat', 'dy': -20},
+    width=600,
+    height=400
+).configure_title(
+    fontSize=25,
+    anchor='start'
+
+).configure_axis(
+    labelFontSize=14,
+    titleFontSize=20,
+    titleColor='gray',
+    labelColor='gray',
+    titlePadding=12
+).configure_legend(
+    titleFontSize=16,
+    labelFontSize=14
+).configure_view(
+    strokeWidth=0,
+).configure_axisX(
+    labelAngle=0,
+    titleAnchor='start'
+).configure_axisY(
+    grid=False,
+    titleAnchor='end',
+    titleFontSize=20
+)
+
+monthly_releases_chart
+
+```
+
+### Beobachtungen: {.unnumbered}
+
+- Bestimmte Monate wie Mai und Januar zeigen eine Spitze in der Anzahl der Veröffentlichungen.
+- Eine solche zeitliche Verteilung kann strategische Entscheidungen von Musikproduzenten und Künstlern widerspiegeln.
+
+---
+
